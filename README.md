@@ -17,8 +17,7 @@
 8. [Input Validation](#input-validation)
 9. [Program Flow](#program-flow)
 10. [Sample Outputs](#sample-outputs)
-11. [Viva Questions and Answers](#viva-questions-and-answers)
-12. [Author](#author)
+11. [Author](#author)
 
 ---
 
