@@ -2,14 +2,7 @@
 
 # Vehicle Rental System
 
-**A beginner-friendly C++ project that demonstrates single inheritance**
-
-![Language](https://img.shields.io/badge/language-C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Concept](https://img.shields.io/badge/concept-Single%20Inheritance-2EA44F?style=for-the-badge)
-![Course](https://img.shields.io/badge/OOPS-PPF%20Mini%20Project-F59E0B?style=for-the-badge)
-
-</div>
-
+**A  C++ project that demonstrates inheritance**
 ---
 
 ## Table of Contents
