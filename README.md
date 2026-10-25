@@ -520,41 +520,6 @@ Enter your choice: 3
 Thank you for using the Vehicle Rental System.
 ```
 
----
-
-## Viva Questions and Answers
-
-**Q1. What is inheritance?**
-It lets one class (the derived class) reuse the data and functions of another class (the base class). Here `Car` and `Bike` reuse the common details of `Vehicle`.
-
-**Q2. Which type of inheritance is used?**
-Single inheritance, because each derived class has only one base class.
-
-**Q3. What does `: public Vehicle` mean?**
-It makes the class inherit from `Vehicle`. `public` keeps the base class's public members public in the derived class.
-
-**Q4. Why are the data members private?**
-For encapsulation. Outside code cannot change them directly, so wrong values cannot get in. Access is only through getters and `setRentalDays()`.
-
-**Q5. How does the derived class initialise the base class part?**
-By calling the base constructor in its initialiser list: `Car(...) : Vehicle(id, model, rate)`.
-
-**Q6. What is function overriding?**
-Redefining a base class function in the derived class with the same name and parameters, so each class can behave in its own way. Here `calculateCharge()` and `display()` are overridden.
-
-**Q7. How is the parent's `display()` used inside the child's `display()`?**
-With the scope operator: `Vehicle::display();`.
-
-**Q8. How is the rental duration validated?**
-`setRentalDays()` only accepts 1 to 30 and returns `false` otherwise. The program keeps asking until it returns `true`.
-
-**Q9. What happens if the user types letters instead of a number?**
-`cin` goes into a fail state. The helper functions detect this with `cin.fail()` (inside the `while (!(cin >> value))` check), clear the error, discard the bad input and ask again.
-
----
-
 ## Author
 
-**Shaurya**
-BCA, CGC Jhanjeri
-GitHub: [@Shaurya](https://github.com/Shaurya)
+[**Shaurya**](https://github.com/Shaurya)
