@@ -65,11 +65,12 @@ public:
 
     void display()
     {
-        cout << "\nCar Rental Details" << endl;
+        cout << "\n----- Car Rental Details -----" << endl;
         Vehicle::display();
         cout << "Seats         : " << seats << endl;
         cout << "Insurance fee : Rs. 500" << endl;
         cout << "Total charge  : Rs. " << calculateCharge() << endl;
+        cout << "------------------------------" << endl;
     }
 };
 
@@ -93,12 +94,13 @@ public:
 
     void display()
     {
-        cout << "\n Bike Rental Details" << endl;
+        cout << "\n----- Bike Rental Details -----" << endl;
         Vehicle::display();
         cout << "Engine        : " << engineCC << " cc" << endl;
         if (getRentalDays() >= 5)
             cout << "Discount      : 10% (rented for 5 days or more)" << endl;
         cout << "Total charge  : Rs. " << calculateCharge() << endl;
+        cout << "-------------------------------" << endl;
     }
 };
 
@@ -185,7 +187,7 @@ string readModel()
 
 void rentCar()
 {
-    cout << "\nCar Rental" << endl;
+    cout << "\n--- Car Rental ---" << endl;
     int id = readPositiveInt("Enter vehicle ID: ");
     string model = readModel();
     double rate = readPositiveDouble("Enter rental rate per day (Rs.): ");
@@ -204,7 +206,7 @@ void rentCar()
 
 void rentBike()
 {
-    cout << "\nBike Rental" << endl;
+    cout << "\n--- Bike Rental ---" << endl;
     int id = readPositiveInt("Enter vehicle ID: ");
     string model = readModel();
     double rate = readPositiveDouble("Enter rental rate per day (Rs.): ");
@@ -227,7 +229,7 @@ int main()
 
     int choice;
     do {
-        cout << "\nVehicle Rental System" << endl;
+        cout << "\n===== Vehicle Rental System =====" << endl;
         cout << "1. Rent a Car" << endl;
         cout << "2. Rent a Bike" << endl;
         cout << "3. Exit" << endl;
